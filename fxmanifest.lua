@@ -5,7 +5,7 @@ lua54 "yes"
 name "fst_custom_minimap"
 description "Adds extra tiles with textures on the minimap and pause menu map beyond the default game limit."
 author "Frostbyte Studios"
-version "3.0.1"
+version "1.0"
 
 client_scripts {
   "utils.lua",
