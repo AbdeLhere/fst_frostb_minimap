@@ -2,7 +2,7 @@
 
 Fivem Minimap Made for fun, ducks out there 🐤
 
-Contact me here [discord](https://discord.gg/bf5qs226RV) 
+Contact me here [discord](https://discord.gg/wG7WJqpvw2) 
 Preview https://youtu.be/nwZrtNXFA2I
 
 Creds to [L1cks](https://forum.cfx.re/u/l1cks/summary)
