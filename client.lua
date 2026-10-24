@@ -127,7 +127,7 @@ function extend_pause_menu_map_bounds()
     table.insert(dummy_blips, create_dummy_blip(global_x_max, global_y_max))
 end
 
-Citizen.CreateThread(function()
+CreateThread(function()
 
     for tile_name, tile_config in pairs(config.tiles) do
         config.tiles[tile_name].x_offset = 1.0 * (tile_config.x_offset or 0)
@@ -145,7 +145,7 @@ Citizen.CreateThread(function()
 
 
     while not IsMinimapRendering() do
-        Citizen.Wait(0)
+Wait(0)
     end
 
     scaleform_minimap_main_map_handle = load_scaleform(config.scaleform_minimap_main_map)
@@ -227,7 +227,7 @@ Citizen.CreateThread(function()
     end
 
     while not IsMinimapRendering() do
-        Citizen.Wait(0)
+        Wait(0)
     end
 
  
@@ -245,16 +245,16 @@ Citizen.CreateThread(function()
     if config.remove_blur then
         RequestStreamedTextureDict(config.radar_masks)
         while not HasStreamedTextureDictLoaded(config.radar_masks) do
-            Citizen.Wait(0)
+            Wait(0)
         end
 
         AddReplaceTexture("platform:/textures/graphics", "radarmasksm", "radar_masks", "radarmasksm")
         AddReplaceTexture("platform:/textures/graphics", "radarmasklg", "radar_masks", "radarmasklg")
 
-        Citizen.Wait(500)
+        Wait(500)
 
         SetBigmapActive(true, false)
-        Citizen.Wait(0)
+        Wait(0)
         SetBigmapActive(false, false)
 
         DisplayRadar(true)
