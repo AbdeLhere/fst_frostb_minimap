@@ -27,7 +27,7 @@ function load_texture_dictionaries(texture_dictionaries)
         if tile.txd then
             RequestStreamedTextureDict(tile.txd)
             while not HasStreamedTextureDictLoaded(tile.txd) do
-                Citizen.Wait(0)
+                Wait(0)
             end
 
             table.insert(loaded_texture_dictionaries, tile.txd)
@@ -46,7 +46,7 @@ function load_scaleform(scaleform_name)
 
     local scaleform_handle = RequestScaleformMovie(scaleform_name)
     while not HasScaleformMovieLoaded(scaleform_handle) do
-        Citizen.Wait(0)
+        Wait(0)
     end
 
     print("Scaleform " .. scaleform_name .. " loaded successfully")
@@ -58,7 +58,7 @@ function refresh_minimap()
     -- Load the minimap.gfx scaleform to fix minimap rendering on first load
     scaleform_minimap_handle = load_scaleform(config.scaleform_minimap)
     SetBigmapActive(true, false)
-    Citizen.Wait(0)
+    Wait(0)
     SetBigmapActive(false, false)
 
     -- Reset the scaleform handle (now pointing to minimap.gfx) to nil
