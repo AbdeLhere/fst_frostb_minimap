@@ -5,6 +5,7 @@ Fivem Minimap Made for fun, ducks out there 🐤
 My [Documentation](https://abdelemporium-docs.gitbook.io/frostbytestudios)
 My [Discord](https://discord.gg/wG7WJqpvw2)
 My [Tebex](https://abdelemporium.tebex.io/category/scripts)
+[Youtube](https://youtu.be/nwZrtNXFA2I) 
 ﻿
 Please Read :warning:﻿﻿
 Everything included in this project is free to use, as long as you respect the credits and the licenses set by the original creators.
